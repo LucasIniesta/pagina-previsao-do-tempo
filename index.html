@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DncWeather</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Your Bootstrap content here -->
@@ -12,9 +12,154 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- JavaScrip -->
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" >
 </head>
+
 <body>
-    
+
+    <!-- Header -->
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h1>DncWeather</h1>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="#tabelaResultadosCep">Endereços</a>
+                    <a href="#tabelaResultadoClima">Previsão do tempo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+
+    <main>
+
+        <!-- Descrição -->
+
+        <section id="first">
+            <div class="row align-items-end justify-content-center">
+                <div class="col-7">
+                    <h2 class="title">
+                        Descubra Mais com Precisão: <br> 
+                        Previsões do Tempo e endereços <br>
+                        em tempo real.
+                    </h2>
+                </div>
+                <div class="col-3">
+                        <img src="assets/img/nuvem.svg" alt="nuvem com sol no fundo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário -->
+
+        <section class="container" id="form">
+            <form method="get">
+                <div class="mb-4">
+                    <div class="row">
+                        <label for="nome" class="form-label">Primeiro Nome:</label>
+                    </div>
+                    <div class="row">
+                        <input id="nome" type="text" class="form-control" placeholder="Insira seu primeiro nome:">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <label for="email" class="form-label">E-mail:</label>
+                    </div>
+                    <div class="row">
+                        <input id="email" type="email" class="form-control" placeholder="Insira seu e-mail">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <label for="cep" class="form-label">Digite o CEP:</label>
+                    </div>
+                    <div class="row">
+                        <input id="cep" type="number" class="form-control" placeholder="Insira o CEP">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="row">
+                        <label for="" class="form-label">Digite a latitude e longitude para saber a previsão:</label>
+                        <div class="col">
+                            <input id="latitude" placeholder="Latitude" type="number" class="form-control">
+                        </div>
+                        <div class="col">
+                            <input id="longitude" placeholder="Longitude" type="number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary w-100" type="submit">Acessar</button>
+            </form>
+        </section>
+
+        <!-- Tabela de resultados endereço -->
+
+        <section class="container" id="tabelaResultadosCep">
+            <div class="row align-items-center justify-content-center mb-4">
+                <div class="col-8">
+                    <h2 class="title">Resultados da busca por CEP:</h2>
+                </div>
+                <div class="col-2 img-fluid">
+                    <img src="assets/icons/local.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="table mb-5" class="container">
+                <div class="row p-3">
+                    <div class="col-4">Logradouro/nome</div>
+                    <div class="col-4">Bairro/Distrito</div>
+                    <div class="col-4">Localidade/UF</div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-4" id="resultadoEndereco">-</div>
+                    <div class="col-4" id="resultadoBairro">-</div>
+                    <div class="col-4" id="resultadoUF">-</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela de resultados Clima -->
+
+        <section class="container" id="tabelaResultadoClima">
+            <div class="row align-items-center justify-content-center mb-4">
+                <div class="col-8">
+                    <h2 class="title">Previsão do tempo na região:</h2>
+                </div>
+                <div class="col-2 img-fluid">
+                    <img src="assets/icons/nuvem.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="table mb-5" class="container" id="clima">
+                <span>Previsão de tempo de acordo com a região: <span id="resultadoClima">24</span>°C</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div>
+                <a href="#">Termos de Uso</a>
+                <a href="#"> Política de Privacidade</a>
+            </div>
+        </footer>
+
+
+    </main>
 </body>
 </html>

@@ -1,0 +1,158 @@
+/* Variáveis e estilizações gerais */ 
+
+    :root {
+        --bg--blue: #0c70f2;
+        --bg--grey: #f2f2f2;
+        --title--black: #1f1f1f;
+        --color--letter--placeholder: rgba(57, 57, 57, 0.5)
+    }
+
+    * {
+        font-family: 'Inter';
+    }
+
+    body {
+        background-color: var(--bg--grey);
+    }
+    .title {
+        font-size: 50px;
+        font-weight: 800;
+        color: var(--title--black);
+    }
+
+/* Header */ 
+
+    header {
+        padding: 25px 50px;
+        background-color: var(--bg--blue);
+    }
+
+    header a{
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 25px;
+        color: white;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-weight: 800;
+        font-size: 50px;
+        color: white;
+    }
+
+/* Section first */ 
+
+    #first {
+        padding: 100px 75px 300px 150px ;
+    }
+    
+    #first h2{
+        margin: 0;
+    }
+
+/* formulário */ 
+
+    #form {
+        background-color: white;
+        width: 40%;
+        border-radius: 30px;
+        padding: 100px 75px 50px 75px;
+        margin-bottom: 250px;
+    }
+
+    .form-label {
+        font-size: 25px;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    form .col {
+        padding-left: 0;
+    }
+
+    .form-control {
+        background-color: var(--bg--grey);
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--color--letter--placeholder);
+    }
+
+    form .btn {
+        margin-top: 50px;
+        font-size: 32px;
+        font-weight: 600;
+        box-shadow: 0px 8px 4px rgba(12, 112, 242, 0.25);
+    }
+
+    
+/* Resultado CEP */
+
+    #tabelaResultadosCep {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 175px;
+    }
+
+    .table .row:first-child {
+        background-color: var(--bg--blue);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    .table .row:last-child{
+        background-color: white;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        color: var(--title--black);
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+/* Resultado Clima */ 
+
+    #tabelaResultadoClima {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 175px;
+    }
+
+    #clima {
+        border: 1px solid var(--bg--blue);
+        border-radius: 30px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        color: var(--title--black);
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+/* Footer */ 
+
+    footer {
+        padding: 30px;
+        text-align: end;
+        background-color: var(--bg--blue);
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    footer a:first-child {
+        border-right: 3px solid white;
+    }
