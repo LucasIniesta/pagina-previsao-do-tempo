@@ -86,6 +86,14 @@
         box-shadow: 0px 8px 4px rgba(12, 112, 242, 0.25);
     }
 
+    input:valid{
+        border: 1px solid var(--bg--blue);
+    }
+
+    input:invalid{
+        border: 1px solid red;
+    }
+
     
 /* Resultado CEP */
 
