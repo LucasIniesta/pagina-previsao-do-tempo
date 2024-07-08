@@ -47,7 +47,7 @@ async function consultaClima() {
 
             document.getElementById('resultadoClima').innerHTML = data.current.temperature_2m
         } catch (error) {
-            alert(error.message)
+            alert('Cordenadas Latitude ou longitude incorreta. Verifique se os campos estão corretos.')
         }
     }
 }

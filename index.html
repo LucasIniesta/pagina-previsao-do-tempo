@@ -23,7 +23,7 @@
     <header>
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-6">
+                <div class="col">
                     <h1>DncWeather</h1>
                 </div>
                 <div class="col-6 text-end">
@@ -42,14 +42,14 @@
         
         <section id="first">
             <div class="row align-items-end justify-content-center">
-                <div class="col-7">
+                <div class="col-12 order-2 col-lg-7">
                     <h2 class="title">
                         Descubra Mais com Precisão: <br> 
                         Previsões do Tempo e endereços <br>
                         em tempo real.
                     </h2>
                 </div>
-                <div class="col-3">
+                <div class="col-12 order-1 col-lg-3">
                     <img src="assets/img/nuvem.svg" alt="nuvem com sol no fundo">
                 </div>
             </div>
@@ -93,7 +93,7 @@
                         class="form-control" 
                         placeholder="Insira o CEP" 
                         required
-                        value="" />
+                        value="01001-000" />
                     </div>
                 </div>
 
@@ -105,14 +105,14 @@
                             placeholder="Latitude" 
                             type="text" 
                             class="form-control"
-                            value="" 
+                            value="-23.5503181" 
                             required/>
                         </div>
                         <div class="col">
                             <input id="longitude" 
                             placeholder="Longitude" 
                             class="form-control"
-                            value="" 
+                            value="-46.6363055" 
                             required/>
                         </div>
                     </div>
@@ -137,14 +137,14 @@
             
             <div class="table mb-5" class="container">
                 <div class="row p-3">
-                    <div class="col-4">Logradouro/nome</div>
-                    <div class="col-4">Bairro/Distrito</div>
-                    <div class="col-4">Localidade/UF</div>
+                    <div class="col-12 col-lg-4">Logradouro/nome</div>
+                    <div class="col-12 col-lg-4">Bairro/Distrito</div>
+                    <div class="col-12 col-lg-4">Localidade/UF</div>
                 </div>
                 <div class="row p-3">
-                    <div class="col-4" id="resultadoEndereco">-</div>
-                    <div class="col-4" id="resultadoBairro">-</div>
-                    <div class="col-4" id="resultadoUF">-</div>
+                    <div class="col-12 col-lg-4" id="resultadoEndereco">-</div>
+                    <div class="col-12 col-lg-4" id="resultadoBairro">-</div>
+                    <div class="col-12 col-lg-4" id="resultadoUF">-</div>
                 </div>
             </div>
         </section>
