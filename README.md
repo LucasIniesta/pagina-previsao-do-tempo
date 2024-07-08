@@ -25,7 +25,7 @@ Este projeto é uma página web que permite ao usuário inserir seu CEP, latitud
 - JavaScript
 - Bootstrap
 
-## Instalação
+## Contribuição
 
 Para contribuir com o código, siga as instruções abaixo:
 
@@ -40,13 +40,6 @@ Para contribuir com o código, siga as instruções abaixo:
 
 Acesse o site pronto através do link: dncweather-consulta-clima-e-cep.netlify.app
 
-## Contribuição
-Para contribuir, basta realizar o clone do repositório e editar o código na sua IDE de preferência.
-
 ## Licença
 Este projeto não possui uma licença específica.
-## Contribuição
-Para contribuir, basta realizar o clone do repositório e editar o código na sua IDE de preferência.
 
-## Licença
-Este projeto não possui uma licença específica.
